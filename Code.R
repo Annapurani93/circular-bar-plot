@@ -37,7 +37,7 @@ ggplot(d2, aes(x=as.factor(id), y=Total, fill=Origin)) +
                              "#b17373"))+
   ylim(-1200,1200) +
   coord_polar() +
-  geom_text(data=label_data, aes(x=id, y=Total+10, label=paste(Language,",",Total),hjust=hjust), color="white", fontface="bold",alpha=0.8, size=2.5, angle= label_data$angle, inherit.aes = FALSE )+
+  geom_text(data=label_data, aes(x=id, y=Total+10, label=paste(Language,",",Total,"million"),hjust=hjust), color="white", fontface="bold",alpha=0.8, size=2.5, angle= label_data$angle, inherit.aes = FALSE )+
   theme(plot.background = element_rect(fill="black"),
         panel.background = element_rect(fill="black"),
         axis.text = element_blank(),
@@ -56,7 +56,7 @@ ggplot(d2, aes(x=as.factor(id), y=Total, fill=Origin)) +
         plot.subtitle=element_markdown(size=12, colour="white", margin=margin(b=15)),
         plot.caption=element_text(hjust=0, size=9, colour="white",margin=margin(t=15)))+
   labs(title="42 OF THE 100 MOST-SPOKEN LANGUAGES ARE OF INDO-EUROPEAN ORIGIN",
-       subtitle="The below data visualization shows the top 100 most-spoken languages in the world classified based on their origin.<br> The size of the dot shows the number of people (in million) who speak it",
+       subtitle="The below data visualization shows the top 100 most-spoken languages in the world coloured based on their origin.<br> The size of the bar shows the number of people who speak the language",
        caption = "Data: @DiversityinData | Design: @annapurani93")->cbp
 
 
