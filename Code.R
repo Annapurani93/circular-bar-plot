@@ -56,7 +56,7 @@ ggplot(d2, aes(x=as.factor(id), y=Total, fill=Origin)) +
         plot.subtitle=element_markdown(size=12, colour="white", margin=margin(b=15)),
         plot.caption=element_text(hjust=0, size=9, colour="white",margin=margin(t=15)))+
   labs(title="42 OF THE 100 MOST-SPOKEN LANGUAGES ARE OF INDO-EUROPEAN ORIGIN",
-       subtitle="The below data visualization shows the top 100 most-spoken languages in the world coloured based on their origin.<br> The size of the bar shows the number of people who speak the language",
+       subtitle="The below data visualization shows the top 100 most-spoken languages in the world coloured based on their origin.<br> The size of the bar indicates the number of people who speak the language",
        caption = "Data: @DiversityinData | Design: @annapurani93")->cbp
 
 
